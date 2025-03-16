@@ -2,9 +2,14 @@
 
 namespace App\Models;
 // use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Utilisateur extends Model
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Auth\Authenticatable;
+
+
+class Utilisateur extends  Authenticatable
 {
-    //
-}
+    protected $table="users";
+
+    protected $guarded = [];
+} 

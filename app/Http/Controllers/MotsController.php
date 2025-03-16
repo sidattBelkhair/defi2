@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Mot;
 use Illuminate\Http\Request;
 
-class MotController extends Controller
+class MotsController extends Controller
 {
     public function index()
     {
